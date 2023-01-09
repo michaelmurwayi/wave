@@ -116,7 +116,21 @@
             100% {
                 opacity: 1;
             }
+        
         }
+        section {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+
     </style>
     <body>
         <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-4 fixed-top"> <img src="static/logo.png" id="logo"> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
@@ -153,7 +167,7 @@
             </div>
         
         <!-- Page Content -->
-        <section class="py-5">
+        <section class="py-5" style="box-shadow: 4px 4px 4px 4px; ">
         <div class="container row" style="text-align: center; margin-left: 20%; ">
             <div class="col-md-4" style="background-image: url(http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/wp-content/uploads/sites/2/2022/10/image-21-1024x1024.jpg); background-position-x: center; background-size: cover;">
             </div>
