@@ -20,18 +20,27 @@
     </head>
     
     <style>
+ 
         .carousel-item {
-            height: 65vh;
+            height: 75vh;
             min-height: 350px;
             background: no-repeat center center scroll;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: cover
+            background-size: cover;
+            -webkit-transition: 0.6s ease-in-out left;
+            -moz-transition: 0.6s ease-in-out left;
+            -o-transition: 0.6s ease-in-out left;
+            transition: 0.6s ease-in-out left;
+            
             }
+              
             #mainNavbar {
             padding-left: 50px;
-            padding-top: 20px
+            padding-top: 20px;
+            background-color: rgb(0,0,0, 0.7);
+            
             }
             .navbar-dark .navbar-brand {
             font-family: 'Source Serif Pro', serif
@@ -47,41 +56,49 @@
             }
             .navbar.scrolled {
             background: rgb(34, 31, 31);
-            transition: background 500ms
+            transition: background 100ms
             }
             .font-weight-light {
             font-family: 'Source Serif Pro', serif
         }
+        #logo{
+            height: 50px;
+        }
+        .overlay { 
+            color:#fff;
+            position:absolute;
+            z-index:12;
+            top:50%;
+            left:0;
+            width:100%;
+            text-align:center;
+            }
+
     </style>
     <body>
-        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top"> <a href="#" class="navbar-brand">BRANDNAME</a> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-4 fixed-top"> <img src="static/logo.png" id="logo"> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navLinks">
         <ul class="navbar-nav">
         <li class="nav-item"> <a href="" class="nav-link">HOME</a> </li>
         <li class="nav-item"> <a href="" class="nav-link">ABOUT</a> </li>
         <li class="nav-item"> <a href="" class="nav-link">SERVICES</a> </li>
-        <li class="nav-item"> <a href="" class="nav-link">CONTACTS</a> </li>
+        <li class="nav-item bg-warning"> <a href="" class="nav-link"><b>Donate</b></a> </li>
         </div>
         </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-mdb-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
+                <div class="carousel-item active" style="background-image: url(http://www.build-africa.org/sites/default/files/build-africa-charity-fighting-poverty-through-education.jpg); ">
+                    <div class="overlay col-md-4" >
+                        <h1>We Provide Vulnerable Children in Kenya With Basic Needs.</h1>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+                <div class="carousel-item" style="background-image:url(https://africa-charity-project.org/WP/wp-content/uploads/2017/04/africa-charity-project-header.jpg);">
+                <!-- <img src="static/image2.jpeg" class="d-block w-100" alt="Camera"/> -->
                 </div>
-                <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
+                <div class="carousel-item" style="background-image: url(https://www.yepafrica.org/wp-content/uploads/2016/02/charity-wordpress-theme-1.jpg);">
+                
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
             </button>
             </div>
         
@@ -93,6 +110,15 @@
         <p class="lead">Bacon ipsum dolor amet drumstick short loin ribeye sirloin ham spare ribs landjaeger, pig turducken meatball sausage. Salami cow shoulder pork loin. Meatloaf turducken andouille chuck beef ribs picanha. Filet mignon pastrami fatback ribeye leberkas shank boudin sirloin beef short ribs tail pig pork loin shoulder buffalo. Short ribs andouille swine chicken leberkas. Fatback sirloin pork belly turkey landjaeger corned beef biltong, buffalo bresaola strip steak brisket short loin salami.</p>
         </div>
         </section>
+
+        <!-- Page Content -->
+        <section class="py-5">
+            <div class="container">
+            <h1 class="font-weight-light">Image Slider Two</h1>
+            <p class="lead">Here you can write anything about the website. These are the sample pictures ,replace them and use your own. These pictures are taken from unsplash.</p>
+            <p class="lead">Bacon ipsum dolor amet drumstick short loin ribeye sirloin ham spare ribs landjaeger, pig turducken meatball sausage. Salami cow shoulder pork loin. Meatloaf turducken andouille chuck beef ribs picanha. Filet mignon pastrami fatback ribeye leberkas shank boudin sirloin beef short ribs tail pig pork loin shoulder buffalo. Short ribs andouille swine chicken leberkas. Fatback sirloin pork belly turkey landjaeger corned beef biltong, buffalo bresaola strip steak brisket short loin salami.</p>
+            </div>
+            </section>
     </body>
     <!-- MDB -->
 <script
