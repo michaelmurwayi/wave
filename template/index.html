@@ -35,6 +35,9 @@
     </head>
     
     <style>
+        body{
+            overflow-X: hidden;
+        }
  
         .carousel-item {
             height: 75vh;
@@ -148,18 +151,22 @@
         /*--Button Styles--*/
         .wrapper a{
             display: block;
+            left: 15%;
+            top: 20px;
             width: 200px;
             height: 40px;
             line-height: 40px;
             font-size: 18px;
             font-family: sans-serif;
             text-decoration: none;
-            color: #333;
+            color: white;
             border: 2px solid #333;
             letter-spacing: 2px;
             text-align: center;
             position: relative;
             transition: all .35s;
+            border-radius: 25px;
+            box-shadow: 1px 1px 1px 1px rgba(76, 245, 39, 0.7);
             }
 
             a span{
@@ -176,14 +183,22 @@
             height: 100%;
             background: green;
             transition: all .35s;
+            border-radius: 25px;
+            
             }
 
             a:hover{
-            color: #fff;
+            color: black;
+            font-weight: bold;
             }
 
             a:hover:after{
             width: 100%;
+            }
+            .payment_methods{
+                position: relative;
+                left: 20%;
+                top: 20px;
             }
     </style>
     <body>
@@ -248,9 +263,29 @@
             <p class="lead">Bacon ipsum dolor amet drumstick short loin ribeye sirloin ham spare ribs landjaeger, pig turducken meatball sausage. Salami cow shoulder pork loin. Meatloaf turducken andouille chuck beef ribs picanha. Filet mignon pastrami fatback ribeye leberkas shank boudin sirloin beef short ribs tail pig pork loin shoulder buffalo. Short ribs andouille swine chicken leberkas. Fatback sirloin pork belly turkey landjaeger corned beef biltong, buffalo bresaola strip steak brisket short loin salami.</p>
             </div>
             <div class="wrapper">
-                <a href="#"><span>Hover Me!</span></a>
+                <a href="#"><span>Donate</span></a>
               </div>
-            </section>
+              <div class="payment_methods">
+                  <div class="row">
+                      <div class="col-md-2">
+                        <i class="fa-brands fa-paypal fa-5x"></i>
+                        <p class="text-primary">PayPal</p>
+                    </div>
+                      <div class="col-md-2">
+                        <i class="fab fa-cc-visa fa-5x"></i>
+                        <p class="text-white">Visa</p>
+                      </div>
+                      <div class="col-md-2">
+                        <i class="fab fa-cc-mastercard fa-5x"></i>
+                        <p class="text-danger">MasterCard</p>
+                      </div>
+                      <div class="col-md-2">
+                        <i class="fab fa-bitcoin fa-5x"></i>
+                        <p class="text-warning">Bitcoin</p>
+                      </div>
+                    </div>
+                    
+        </section>
     </body>
     <!-- MDB -->
 <script
