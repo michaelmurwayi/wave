@@ -211,7 +211,7 @@
             padding-left: 0.5rem;
             /* top: 0.2rem;
             left: 270px; */
-            animation: openclose 15s ease-in-out 1;
+            animation: openclose 25s ease-in-out infinite;
             }
             .word1, .word2, .word3 {
                 font-family: tahoma;
@@ -222,86 +222,33 @@
                         width: 0px;
                         
                     }
-                    25%  {
+                    15%  {
                         width: 25%;
-                        text-indent: 10%;
+                        text-indent: 0%;
                     }
-                    50%  { 
+                    35%  { 
                         width: 50%;
-                        text-indent: 20%;
+                        text-indent: 5%;
                     }
-                    75% { 
+                    45% { 
                         width: 75%;
                     }
-                    100%{
+                    50%, 55%, 60%, 65%, 70%, 75%, 80% {
                         width: 100%;
+                        text-indent: 5%;
+                    }
+
+                    85%{
+                        width: 75%;
+                        
+                    }
+                    90%{
+                        width: 50%;
+                    }
+                    100%{
+                        width: 0%;
                     }
                     }
-/* 
-                @keyframes openclose {
-                0% {
-                    top: 0.2rem;
-                    width: 0;
-                }
-                5% {
-                    width: 60%;
-                }
-                15% {
-                    width: 60%;
-                }
-                30% {
-                    top: 0.2rem;
-                    width: 60%;
-                }
-                33% {
-                    top: 0.2rem;
-                    width: 60%;
-                }
-                35% {
-                    top: 0.2rem;
-                    width: 60%;
-                }
-                38% {
-                    top: -4.5rem;
-                    
-                }
-                48% {
-                    top: -4.5rem;
-                    width: 190px;
-                }
-                62% {
-                    top: -4.5rem;
-                    width: 60%;
-                }
-                66% {
-                    top: -4.5rem;
-                    width: 60%;
-                    text-indent: 0;
-                }
-                71% {
-                    top: -9rem;
-                    width: 0;
-                    text-indent: 5px;
-                }
-                86% {
-                    top: -9rem;
-                    width: 285px;
-                }
-                95% {
-                    top: -9rem;
-                    width: 285px;
-                }
-                98% {
-                    top: -9rem;
-                    width: 0;
-                    text-indent: 5px;
-                }
-                100% {
-                    top: 0;
-                    width: 0;
-                    text-indent: 0;
-                }
-            } */
     </style>
     <body>
         <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-4 fixed-top"> <img src="static/logo.png" id="logo"> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
@@ -394,7 +341,13 @@
         <section class="py-5">
             <div class="col-md-4" style="margin-left: 10%; background-image: url(static/map.jpg); height:60vh;">
                 <div class="message" style="background-color: rgb(0,0,0, 0.7); height: 100%; color: white; text-align: justify; text-justify: inter-word;" >
-                    <div class="word1">WAVE Children’s Foundation is a diverse team of passionate leaders, committed to working cooperatively for sustainable programs.</div>
+                    <div class="word1 col-md-7 m-5" style="text-align: center;">
+                    <p>
+                        WAVE Children’s Foundation is a diverse team of passionate leaders, committed to working cooperatively for sustainable programs.
+                        Sustainability is more than just completed projects, it is providing hope and empowerment for our impact centers in Kenya.
+                        WAVE Children’s Foundation has been partnering with local leaders in Nairobi, Kenya since 2019 providing integrated and sustainable community development projects.
+                    </p>                        
+                        
                 </div>
             </div class="col-md-6" >
             <div class="col"></div>
