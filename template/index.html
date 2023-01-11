@@ -56,7 +56,6 @@
             }
               
             #mainNavbar {
-            padding-left: 50px;
             padding-top: 20px;
             background-color: rgb(0,0,0, 0.7);
             
@@ -198,8 +197,9 @@
             }
             .payment_methods{
                 position: relative;
-                left: 20%;
+                left: 5%;
                 top: 20px;
+                width: 80%;
             }
 
 
@@ -255,6 +255,27 @@
                     100%{
                         width: 0%;
                     }
+                    }
+                    .contact_us{
+                        text-align: center;
+                    }
+
+                    .contact_us form{
+                        margin-top: 10%;
+                        margin-left: 0%;
+                    }
+                    .contact_us input {
+                        border-radius: 20px;
+                        margin-top: 20px;
+                        text-align: center;
+                        width: 35vw;
+                    }
+                    .contact_us textarea {
+                        border-radius: 20px;
+                        margin-top: 20px;
+                        width: 35vw;
+                        height: 15vh;
+                        text-align: center;
                     }
     </style>
     <body>
@@ -323,7 +344,7 @@
                 <a href="#"><span>Donate</span></a>
               </div>
               <div class="payment_methods">
-                  <div class="row">
+                  <div class="row" style="margin-left:10%; margin-top: 20px;">
                       <div class="col-md-2">
                         <i class="fa-brands fa-paypal fa-5x"></i>
                         <p class="text-primary">PayPal</p>
@@ -403,12 +424,41 @@
                 />
             </div>
             </div>
-            <!-- Gallery -->
-
+           
             </div>
            
         </section>
         <!-- End of Projects -->
+        <!-- Conatact US -->
+        <section class="py-5 contact_us row" style="background-color: grey;">
+            <h1> Contact Us</h1>
+            <div class="col-md-4" style="margin-left: 10%;">
+                <img src="static/contact.webp">
+            </div>
+            <div class="col-md-4">
+                <form class="col-md-8">
+                    <div class="form-row align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                        
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="email">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <textarea class=""  name="message" placeholder="Message" style=""></textarea> 
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </section>
+        <!-- End of Constact Us -->
     </body>
     <!-- MDB -->
 <script
