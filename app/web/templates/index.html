@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+    <title>Wave Children's Foundation</title>
+    <head>
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+        rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+        rel="stylesheet"
+        />
+    </head>
+    
+    <style>
+        body{
+            overflow-X: hidden;
+            position: relative;
+        }
+ 
+        .carousel-item {
+            height: 75vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            -webkit-transition: 0.6s ease-in-out left;
+            -moz-transition: 0.6s ease-in-out left;
+            -o-transition: 0.6s ease-in-out left;
+            transition: 0.6s ease-in-out left;
+            
+            }
+              
+            #mainNavbar {
+            padding-top: 20px;
+            background-color: rgb(0,0,0, 0.7);
+            
+            }
+            .navbar-dark .navbar-brand {
+            font-family: 'Source Serif Pro', serif
+            }
+            .navbar-nav .nav-link {
+            font-family: 'Source Serif Pro', serif
+            }
+            .display-4 {
+            font-family: 'Source Serif Pro', serif
+            }
+            .lead {
+            font-family: 'Source Serif Pro', serif
+            }
+            .navbar.scrolled {
+            background: rgb(34, 31, 31);
+            transition: background 100ms
+            }
+            .font-weight-light {
+            font-family: 'Source Serif Pro', serif
+        }
+        #logo{
+            height: 50px;
+        }
+        .overlay { 
+            color:#fff;
+            opacity: 0.7;
+            position:absolute;
+            z-index:12;
+            top:0%;
+            left:0px;
+            width:100%;
+            height: 75vh;
+            text-align:center;
+            background-color: rgb(0,0,0, 0.7);
+            border-radius: 0px;
+        }
+        .overlay h1{
+            position: relative;
+            top: 50%;
+            width: 50%;
+            left: 20%; 
+        }
+        .overlay p{
+            position: relative;
+            top: 50%;
+            width: 50%;
+            left: 20%; 
+        }
+        .overlay {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        
+        }
+        section {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .donate{
+            background-color: black;
+        }
+        .donate h1 {
+            color: green;
+        }
+        
+        .wrapper{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+        
+
+        /*--Button Styles--*/
+        .wrapper a{
+            display: block;
+            left: 15%;
+            top: 20px;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: white;
+            border: 2px solid #333;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+            border-radius: 25px;
+            box-shadow: 1px 1px 1px 1px rgba(76, 245, 39, 0.7);
+            }
+
+            .wrapper a span{
+            position: relative;
+            z-index: 2;
+            }
+
+            .wrapper a:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: green;
+            transition: all .35s;
+            border-radius: 25px;
+            
+            }
+
+            a:hover{
+            color: black;
+            font-weight: bold;
+            }
+
+            a:hover:after{
+            width: 100%;
+            }
+            .payment_methods{
+                position: relative;
+                left: 5%;
+                top: 20px;
+                width: 80%;
+            }
+
+
+            .message {
+            background-color: yellow;
+            color: #333;
+            display: block;
+            font-weight: 900;
+            overflow: hidden;
+            padding-left: 0.5rem;
+            /* top: 0.2rem;
+            left: 270px; */
+            animation: openclose 20s ease-in-out infinite;
+            }
+            .word1, .word2, .word3 {
+                font-family: tahoma;
+                }
+
+                @keyframes openclose {
+                    0%   {
+                        width: 0px;
+                        
+                    }
+                    10%  {
+                        width: 5%;
+                        text-indent: 0%;
+                    }
+                    15%  { 
+                        width: 10%;
+                        text-indent: 10%;
+                    }
+
+                    25% { 
+                        width: 20%;
+                    }
+                    
+                    35% { 
+                        width: 25%;
+                    }
+
+                    45%, 50%, 55%, 60%, 65%, 70%, 75%, 80% {
+                        width: 34%;
+                        text-indent: 5%;
+                    }
+
+                    85%{
+                        width: 15%;
+                        
+                    }
+                    90%{
+                        width: 5%;
+                    }
+                    100%{
+                        width: 0%;
+                    }
+                    }
+                    .contact_us{
+                        text-align: center;
+                        background-color: rgb(34, 31, 31, 0.2);
+                    }
+
+                    .contact_us form{
+                        
+                        margin-left: 0%;
+                    }
+                    .contact_us input {
+                        border-radius: 20px;
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    .contact_us textarea {
+                        border-radius: 20px;
+                        margin-top: 20px;
+                        height: 10vh;
+                        text-align: center;
+                    }
+    </style>
+    <body>
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-4 fixed-top"> <img src="static/logo.png" id="logo"> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+        <li class="nav-item"> <a href="" class="nav-link">HOME</a> </li>
+        <li class="nav-item"> <a href="" class="nav-link">ABOUT</a> </li>
+        <li class="nav-item"> <a href="" class="nav-link">SERVICES</a> </li>
+        <li class="nav-item bg-warning"> <a href="" class="nav-link"><b>Donate</b></a> </li>
+        </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url(http://www.build-africa.org/sites/default/files/build-africa-charity-fighting-poverty-through-education.jpg); ">
+                    <div class="overlay" >
+                        <h1>We Provide Vulnerable Children in Kenya With Basic Needs.</h1>
+                        <p>Wave Children's Foundation is a registered 501(c)(3) EIN 85-2738630 charitable organization that supports children rescue centers and orphanages across the world with our first project in Kenya</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url(https://africa-charity-project.org/WP/wp-content/uploads/2017/04/africa-charity-project-header.jpg);">
+                    <div class="overlay" >
+                        <h1>Offering support and essential goods to those who need it the most.</h1>
+                        <p>Since 2019, we have been striving to better the lives of children living in orphanages and rescue centers by offering self substainable programs that aid them in bettering their lives and the communities they come from.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(https://www.yepafrica.org/wp-content/uploads/2016/02/charity-wordpress-theme-1.jpg);">
+                    <div class="overlay" >
+                        <h1>Support Our Cause.</h1>
+                        <p>Make a donation and support our Project. We ensure vulnerable kids have access to balance diet to provide the needed energy to grab opportunities in their journey and be a difference in the society.</p>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        
+        <!-- About Section -->
+
+        <section class="py-5 about"  style="box-shadow: 4px 4px 4px 4px; ">
+        <div class="container row" style="text-align: center; margin-left: 20%; ">
+            <div class="col-md-5" style="background-image: url(http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/wp-content/uploads/sites/2/2022/10/image-21-1024x1024.jpg); background-position-x: center; background-size: cover;">
+            </div>
+            <div class="col-md-6 blue row">
+                <div class="col-md-4 mt-5" style="background-color: rgb(255,255,255);">
+                    <p class="font-weight-light" style="font-size: 30px; font-weight: 900; text-align: 
+                    center;">About</p>
+                </div>
+                <div class="col-md-4 mt-5" style="background-color: rgb(80,139,233);">
+                    <p class="font-weight-light" style=" color: #fff; font-size: 30px; font-weight: 900;">Us</p>
+                </div>
+                <p class="lead">WAVE Children’s Foundation is an international nonprofit organization, working in collaboration with underserved communities in Africa to bring about sustainable solutions for everyday challenges. We work in food and education programs, supporting children rescue centers and orphanages with a variety of integrated projects focusing on basic needs.
+                    All our sustainable community development projects are Africa -led; however, we are also committed to empowering international volunteers to see themselves as global citizens and agents of change.
+                    WAVE Children’s Foundation sees education as the key to breaking the cycle of poverty..</p>
+            </div>
+        </div>
+        </section>
+        <!-- End of About Section -->
+        <!-- Donation Section -->
+        <section class="py-5 donate">
+            <div class="container">
+            <h1 class="font-weight-light">Join Us</h1>
+            <p class="lead">YOUR HELP CAN SAVE CHILDREN LIVES</p>
+            <p class="lead">Bacon ipsum dolor amet drumstick short loin ribeye sirloin ham spare ribs landjaeger, pig turducken meatball sausage. Salami cow shoulder pork loin. Meatloaf turducken andouille chuck beef ribs picanha. Filet mignon pastrami fatback ribeye leberkas shank boudin sirloin beef short ribs tail pig pork loin shoulder buffalo. Short ribs andouille swine chicken leberkas. Fatback sirloin pork belly turkey landjaeger corned beef biltong, buffalo bresaola strip steak brisket short loin salami.</p>
+            </div>
+            <div class="wrapper">
+                <a href="#"><span>Donate</span></a>
+              </div>
+              <div class="payment_methods">
+                  <div class="row" style="margin-left:10%; margin-top: 20px;">
+                      <div class="col-md-2">
+                        <i class="fa-brands fa-paypal fa-5x"></i>
+                        <p class="text-primary">PayPal</p>
+                    </div>
+                      <div class="col-md-2">
+                        <i class="fab fa-cc-visa fa-5x"></i>
+                        <p class="text-white">Visa</p>
+                      </div>
+                      <div class="col-md-2">
+                        <i class="fab fa-cc-mastercard fa-5x"></i>
+                        <p class="text-danger">MasterCard</p>
+                      </div>
+                      <div class="col-md-2">
+                        <i class="fab fa-bitcoin fa-5x"></i>
+                        <p class="text-warning">Bitcoin</p>
+                      </div>
+                    </div>
+                    
+        </section>
+        <!-- End of Donation section -->
+        <!-- Projects -->
+        <section class="py-5 row" style="text-align: center;">
+            <h1>Our Programs</h1>
+            <div class="col-md-4 mt-5" style="margin-left: 10%; background-image: url(static/map.jpg); height:70vh;">
+                <div class="message" style="position: absolute; left: 9.5%; background-color: rgb(0,0,0, 0.7); height: inherit; width: 20%; color: white; text-align: justify; text-justify: inter-word;" >
+                    <div class="word1 col-md-7 " style="text-align: center; margin: 20%;">
+                    <p>
+                        WAVE Children’s Foundation is a diverse team of passionate leaders, committed to working cooperatively for sustainable programs.
+                        Sustainability is more than just completed projects, it is providing hope and empowerment for our impact centers in Kenya.
+                        WAVE Children’s Foundation has been partnering with local leaders in Nairobi, Kenya since 2019 providing integrated and sustainable community development projects.
+                    </p>                        
+                        
+                </div>
+            </div >
+            </div>
+            <div class="col-md-6 mt-5">
+            <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img
+                src="static/gal1.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+                />
+
+                <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Wintry Mountain Landscape"
+                />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Mountains in the Clouds"
+                />
+
+                <img
+                src="static/gal2.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+                />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+                />
+
+                <img
+                src="static/gal3.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Yosemite National Park"
+                />
+            </div>
+            </div>
+           
+            </div>
+
+            <div class="card-group row">
+                <div class="card">
+                  <img src="static/gal5.jpg" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Hopestar Academy is need of desks</h5>
+                    <p class="card-text">
+                        In Masai Mara, around 75 percent of students do not have a desk or a chair. 
+                        We are commited to provide that missing piece of classroom equipment that can make all the difference for young learners.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="static/gal4.jpeg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                  <div class="card-body">
+                    <h5 class="card-title">HOW TO SUPPORT</h5>
+                    <p class="card-text">
+                        WAVE Children’s Foundation welcomes partnership from everyone. Support sustainable development in Africa by donating, volunteering, or spreading the word
+                    </p>
+                  </div>
+                </div>
+              </div>
+           
+        </section>
+        <!-- End of Projects -->
+        <!-- Conatact US -->
+        <section class="mb-4 contact_us">
+
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                a matter of hours to help you.</p>
+
+            <div class="row" >
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-md-0 mb-5" style="margin-left: 15%;">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                                    
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row" style="margin-top: 20px;">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Message"></textarea>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--Grid row-->
+                        <button class="btn btn-primary mt-4">Send</button>
+                    </form>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>San Francisco, CA 94126, USA</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+ 01 234 567 89</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@mdbootstrap.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+            </div>
+
+        </section>
+     <!-- End of Constact Us -->
+     <!-- Footer -->
+     <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Wave Children’s Foundation
+                </h6>
+                <img src="static/logo.png" id="logo"> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"></button>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Social Media
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                   
+                </div>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Home</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">About</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Donate</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Help</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Wave Children’s Foundation</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+     <!-- End of Footer -->
+    </body>
+    <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+</html>
