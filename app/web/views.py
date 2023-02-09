@@ -7,3 +7,4 @@ class HomeView(TemplateView):
 
 class DonateView(TemplateView):
     template_name = "donate.html"
+    
