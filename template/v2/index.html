@@ -17,28 +17,37 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
         rel="stylesheet"
         />
+        <link href="./static/css/index.css" rel="stylesheet"/>
+        <style>
+            .logo {
+            display: block;
+            max-width: 5%; /* Make sure the image doesn't exceed its container */
+            height: auto; /* Maintain the aspect ratio of the image */
+            margin: 0 auto; /* Center the image horizontally */
+            }
+        </style>
     </head>
     <body>
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">Logo</a>
+                <img class="logo" src="./static/images/logo.png"/>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Wave</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Our Impact</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#">Get Involved</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#"><button class="btn btn-primary">DONATE</button></a>
                     </li>
                 </ul>
                 </div>
