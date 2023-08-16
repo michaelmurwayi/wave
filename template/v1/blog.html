@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Charity &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="static/css/superfish.css">
+
+	<link rel="stylesheet" href="static/css/style.css">
+
+	<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	rel="stylesheet"
+	/>
+	<!-- Google Fonts -->
+	<link
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+	rel="stylesheet"
+	/>
+	<!-- MDB -->
+	<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+	rel="stylesheet"
+	/>
+        <!-- Google Fonts -->
+	<link
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+	rel="stylesheet"
+	/>
+	<!-- MDB -->
+	<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+	rel="stylesheet"
+	/>
+	
+	<!-- Font Awesome -->
+	<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	rel="stylesheet"
+	/>
+	<!-- Google Fonts -->
+	<link
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+	rel="stylesheet"
+	/>
+	<!-- MDB -->
+	<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+	rel="stylesheet"
+	/>
+
+
+	</head>
+<style>
+body {
+  display : flex;
+  /* align-items : center; */
+  /* justify-content : center;   */
+  flex-direction: column;
+  background-color: white;
+  min-height : 800px;
+  overflow-y: hidden;
+}
+
+.overlay { 
+	color:#fff;
+	/* opacity: 0.9; */
+	position:absolute;
+	z-index:12;
+	top:0%;
+	left:0px;
+	width:100%;
+	height: 100vh;
+	text-align:center;
+	background-color: rgb(0,0,0, 0.7);
+	border-radius: 0px;
+}
+
+.container-fluid {
+  position : relative;
+  /* width : 1100px; */
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  padding : 30px;  
+}
+
+.container-fluid .card {
+  position: relative;
+  max-width : 400px;
+  height : 250px;  
+  background-color : #43345d;
+  margin : 30px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container-fluid .card:hover {
+  height : 450px;    
+  background-color: #fff;
+}
+
+.container-fluid .card .image {
+  position : relative;
+  width : 230px;
+  height : 100px;
+  top : -20%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container-fluid .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container-fluid .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container-fluid .card:hover .content {
+   margin-top : 250px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+
+.support {
+  --m:
+    radial-gradient(circle farthest-side at right,#000 99%,#0000) 
+      0 100%/46% 92% no-repeat,
+    radial-gradient(circle farthest-side at left ,#000 99%,#0000) 
+      100% 0/46% 92% no-repeat;
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale(.5);
+  transition: .3s linear;
+  cursor: pointer;
+}
+.support:hover {
+  -webkit-mask-position: 7.5% 50%,92.5% 50%;
+          mask-position: 7.5% 50%,92.5% 50%;
+  filter: grayscale(0);
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+  display: grid;
+  height: 100vh;
+  grid-auto-flow :column;
+  place-content: center;
+  gap: 40px;
+}
+	</style>
+	<body>
+		<div id="fh5co-wrapper">
+			<div id="fh5co-page">
+			<div class="header-top" style="background-color: #43345d;">
+				<div class="container">
+					<div class="row" >
+						<div class="col-md-12 col-sm-6 text-right fh5co-social">
+							<!-- Facebook -->
+							<div class="col-md-9">
+	
+							</div>
+							<div class="row col-md-3">
+	
+								<i class="fab fa-facebook-f fa-2x col-md-1" style="color: #3b5998;"></i>
+								
+							<!-- Twitter -->
+							<i class="fab fa-twitter fa-2x col-md-2" style="color: #55acee;"></i>
+	
+	
+							<!-- Instagram -->
+							<i class="fab fa-instagram fa-2x col-md-2" style="color: #ac2bac;"></i>
+							
+							<!-- Linkedin -->
+							<i class="fab fa-linkedin-in fa-2x col-md-2" style="color: #0082ca;"></i>
+							
+							<!-- Youtube -->
+							<i class="fab fa-youtube fa-2x col-md-2" style="color: #ed302f;"></i>
+							
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<img src="static/images/logo.png" style="width: 80px; border-radius: 5%; margin-top: 10px;">
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="#" class="fh5co-sub-ddown">Our Impact</a>
+							</li>
+							<li>
+								<a href="#" class="fh5co-sub-ddown">Get Involved</a>
+							</li>
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="fh5co-hero">
+			<div class="fh5co-cover text-center overlay" data-stellar-background-ratio="0.5" style="background-image: url(static/images/impact.jpeg);" style="height: 10vh;">
+				
+			</div>
+
+		</div>
+		
+		<div id="fh5co-blog-section" class="fh5co-section-gray">
+			
+			<div class = "container-fluid row">
+				<div class="col-md-12 text-center heading-section">
+					<h3><b>Our Impact</b>.</h3>
+					<p>We Provide Vulnerable Children in Kenya With basic Needs.</p>
+				</div>
+				<div class = "card col-md-4">
+				  <div class = "image"  style="height: 270px;">
+					<img  src ="static/images/impact1.jpg" style="height: 270px; width: 270px;">
+				  </div>
+				  <div class = "content" style="margin-top: 60px; text-align: justify; width: 100%;">
+					<hr style="border: 2px solid #FF5722;">
+					<h3>Greenhouse at Children's Garden Home</h3>
+					<hr style="border: 2px solid #FF5722;">
+					<p><i>“The greenhouse has been benefiting us. For the first time in a long time we had delicious meals prepared with tomatoes and our vegetables have been very delicious."</i></p>
+					<small>	Mwangi Student at Children's Garden Home</small>
+				</div>
+				</div>
+				<div class = "card col-md-4">
+					<div class = "image" style="height: 270px;" >
+					  <img src ="static/images/impact2.jpg" style="height: 270px; width: 270px;">
+					</div>
+					<div class = "content" style="margin-top: 60px; text-align: justify; width: 100%;">
+						<hr style="border: 2px solid #FF5722;">
+						<h3>Information center at Children's Garden</h3>
+						<hr style="border: 2px solid #FF5722;">
+					  	<p>Providing the children with the tools and resources needed to advance in today’s modern world will open doors for them filled with career opportunities and educational experiences they otherwise would not have.</p>
+					</div>
+				  </div>
+				  <div class = "card col-md-4">
+					<div class = "image" style="height: 270px;" >
+					  <img src ="static/images/impact2.jpg" style="height: 270px; width: 270px;">
+					</div>
+					<div class = "content" style="margin-top: 60px; text-align: justify; width: 100%;">
+						<hr style="border: 2px solid #FF5722;">
+						<h3>Information center at Children's Garden</h3>
+						<hr style="border: 2px solid #FF5722;">
+					  	<p>Providing the children with the tools and resources needed to advance in today’s modern world will open doors for them filled with career opportunities and educational experiences they otherwise would not have.</p>
+					</div>
+				  </div>
+				  <div class = "card col-md-4">
+					<div class = "image" style="height: 270px;" >
+					  <img src ="static/images/impact2.jpg" style="height: 270px; width: 270px;">
+					</div>
+					<div class = "content" style="margin-top: 60px; text-align: justify; width: 100%;">
+						<hr style="border: 2px solid #FF5722;">
+						<h3>Information center at Children's Garden</h3>
+						<hr style="border: 2px solid #FF5722;">
+					  	<p>Providing the children with the tools and resources needed to advance in today’s modern world will open doors for them filled with career opportunities and educational experiences they otherwise would not have.</p>
+					</div>
+				  </div>
+				  <div class = "card col-md-4">
+					<div class = "image" style="height: 270px;" >
+					  <img src ="static/images/impact2.jpg" style="height: 270px; width: 270px;">
+					</div>
+					<div class = "content" style="margin-top: 60px; text-align: justify; width: 100%;">
+						<hr style="border: 2px solid #FF5722;">
+						<h3>Information center at Children's Garden</h3>
+						<hr style="border: 2px solid #FF5722;">
+					  	<p>Providing the children with the tools and resources needed to advance in today’s modern world will open doors for them filled with career opportunities and educational experiences they otherwise would not have.</p>
+					</div>
+				  </div>
+				      
+			  </div>
+			</div>
+			<div class="container-fluid" style="background-color: #fff;">
+				<div class="row">
+
+					<div class="col-md-12 text-center heading-section">
+						<h3><b>Partner with us</b>.</h3>
+					<p>Get involved to help us sustain this project and reach out to other rescue center's.</p>
+				</div>
+				<div>
+					<div class="col-md-4">
+						<img class="support" style="width: 350px;" src="static/images/impact3.jpg" >
+
+					</div>
+					<div class="col-md-4" style="align-items: center; text-align: center;">
+						<button class="btn btn-primary btn-lg" style="font-size: 20px; ">Donate</button>
+					</div>
+					<div class="col-md-4">
+						
+						<img class="support" style="width: 350px;" src="static/images/impact3.jpg" >
+					</div>
+				</div>
+				</div>
+			</div>
+			<footer>
+				<div id="footer">
+					<div class="container row">
+						<div class="col-md-2"></div>
+						<div class = "col-md-2">
+							<img src="static/images/candid.svg">
+						</div>
+						
+						<div class="row col-md-5">
+							<div class="col-md-6 col-md-offset-3 text-center">
+								<p class="fh5co-social-icons">
+									<a href="#"><i class="icon-twitter2"></i></a>
+									<a href="#"><i class="icon-facebook2"></i></a>
+									<a href="#"><i class="icon-instagram"></i></a>
+									<a href="#"><i class="icon-dribbble2"></i></a>
+									<a href="#"><i class="icon-youtube"></i></a>
+								</p>
+								<p>Copyright © 2023. WAVE Children’s Foundation is a 501(c)3 Nonprofit Organization.<b>EIN 85-2738630 </b></p>
+							</div>
+						</div>
+	
+						<div class = "col-md-2">
+							<img src="static/images/charity.png" style="width: 120px; height: 120px;">
+						</div>
+					</div>
+				</div>
+			</footer>
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
