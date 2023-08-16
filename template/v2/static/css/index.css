@@ -55,13 +55,23 @@
   /* Floating Card */
 
   .card-floating {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  top: 50vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  height: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    top: 50vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    height: 400px;
+    text-align: center;
+    color: wheat;
 }
 
+.card-floating h3 {
+  color: wheat;
+  font-weight: 900;
+}
+.card-floating .card-text{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
   
   /* Main Content */
   main {
