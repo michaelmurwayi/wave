@@ -4,6 +4,7 @@
     height: 60vh;
     width: 100vw;
     overflow: hidden;
+    animation: fadeUp 1s ease-in-out forwards;
   }
   
   /* Video Background */
@@ -35,6 +36,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    
   }
   
   /* Navbar */
@@ -62,7 +64,22 @@
     height: 400px;
     text-align: center;
     color: wheat;
+    animation: fadeUp 1s ease-in-out forwards;
 }
+
+/* Card Fade Up Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 .card-floating h3 {
   color: wheat;
