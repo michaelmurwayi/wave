@@ -5,6 +5,7 @@
     width: 100vw;
     overflow: hidden;
     animation: fadeUp 1s ease-in-out forwards;
+    color: wheat;
   }
   
   /* Video Background */
@@ -45,7 +46,14 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0);
+    color: wheat;
+  }
+ 
+  .nav-link{
+    color: wheat;
+  }
+  .nav-link .active{
+    color: orange;
   }
 
   .logo {
@@ -92,7 +100,7 @@
   
 .container{
   position: relative;
-  top: -50px;
+  top: 10px;
   animation: fadeUp 1s ease-in-out forwards;
 }
 
@@ -116,7 +124,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 200px;
+  height: 100px;
   background-color: rgb(52, 152, 219);
   overflow: hidden;
   /* transform: translate(-50%, -50%); */
@@ -141,4 +149,28 @@
   animation: glow 2s infinite;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  position: inherit;
+  left: 150px;
+}
+
+.gallery-item {
+  flex: 1;
+  max-width: calc(33.33% ); /* Adjust this for the desired number of columns */
+  margin: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+      max-width: calc(50% - 20px);
+  }
+}
 
