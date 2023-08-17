@@ -1,7 +1,7 @@
 /* Header */
 .header {
     position: relative;
-    height: 60vh;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
     animation: fadeUp 1s ease-in-out forwards;
@@ -45,6 +45,7 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .logo {
@@ -58,10 +59,10 @@
 
   .card-floating {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    top: -15vh;
+    top: -20vh;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
-    height: 400px;
+    height: 450px;
     text-align: center;
     color: wheat;
     animation: fadeUp 1s ease-in-out forwards;
@@ -80,7 +81,6 @@
 }
 
 
-
 .card-floating h3 {
   color: wheat;
   font-weight: 900;
@@ -90,10 +90,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
   
-  /* Main Content */
-main {
-    padding: 40px;
-  }
+
 
 .box{
   font-size: 20px;
