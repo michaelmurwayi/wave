@@ -20,6 +20,8 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    background-image: url("https://media.istockphoto.com/id/619643870/photo/hungry-african-children-asking-for-food-africa.jpg?s=612x612&w=0&k=20&c=HuSbhCK-BNFVSQsVfSa63gehixkKAfRak2HmQYw7mhY=") ;
+    background-size: cover;
   }
   
   .overlay {
