@@ -1,0 +1,275 @@
+body{
+    overflow-x: hidden;
+}
+
+.logo {
+    display: block;
+    width: 100px; /* Make sure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+/* Header */
+.header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: fadeUp 1s ease-in-out forwards;
+    color: wheat;
+}
+
+/* Video Background */
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-image: url("../images/impact-header.jpg") ;
+    background-size: cover;
+    background-position: center top;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Header Content */
+.header-content {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    text-align: left;
+    display: grid;
+    place-items: start;
+    place-content: start;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: wheat;
+}
+
+.socials{
+    position: absolute;
+    left: 35vw;
+    font-size: 25px;
+}
+
+.nav-link{
+    color: wheat;
+}
+.nav-link .active{
+    color: orange;
+}
+
+.logo {
+    display: block;
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+/* Wave Container */
+.wave-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    background-color: rgb(52, 152, 219);
+    overflow: hidden;
+    /* transform: translate(-50%, -50%); */
+    animation: glow 2s infinite;
+  }
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 5px #3498db, 0 0 10px #3498db, 0 0 20px rgb(52, 152, 219, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 40px  rgb(52, 152, 219, 0.8);
+    }
+  }
+
+  .impact{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(52, 152, 219);
+    overflow: hidden;
+    color: wheat;
+    font-size: 65px;
+    animation: glow 2s infinite;
+  }
+  .contaainer{
+    width: 100vw;
+    position: relative;
+    text-align: right;
+  }
+  .impact-text{
+    font-size: 18px;
+  }
+   /* Add custom styles here */
+   .video-container {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    /* padding-bottom: 56.25%; 16:9 aspect ratio (adjust as needed) */
+    overflow: hidden;
+    margin-top: 50px;
+    background-color: red;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+  }
+
+  .vid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity as needed */
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 40%;
+    height: fit;
+    z-index: 1;
+    color: wheat;
+    font-size: 35px;
+    font-weight: bolder;
+     /* Adjust overlay color and opacity as needed */
+  }
+  .overlay-button{
+        position: absolute;
+        top: 100px;
+        left:20%;
+        z-index: 1;
+        font-size: 40px;
+  }
+  .overlay-button .btn{
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+  }
+/* Center the contact form vertically and horizontally */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  /* Style the contact form */
+  .contact-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust form spacing and padding */
+  .form-label,
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  /* Center the submit button */
+  .contact .btn-primary {
+    display: block;
+    margin: 0 auto;
+  }
+  /* styles.css */
+  
+  /* Center the contact form vertically and horizontally */
+  
+  /* Style the contact form */
+  .contact-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust form spacing and padding */
+  .form-label,
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  /* Center the submit button */
+  .contact .btn-primary {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100vw;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 10px;
+  }
+  
+  .footer-column h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  
