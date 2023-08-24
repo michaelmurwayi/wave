@@ -14,7 +14,7 @@ body{
       width: 100%;
       overflow: hidden;
       animation: fadeUp 1s ease-in-out forwards;
-      color: wheat;
+      color: white;
     }
     
     /* Video Background */
@@ -26,7 +26,7 @@ body{
       height: 100%;
       object-fit: cover;
       z-index: -1;
-      background-image: url("https://nfg-sofun.s3.amazonaws.com/uploads/project/photo/162638/poster_board_cgh.jpg") ;
+      background-image: url("../images/involve-header.jpg") ;
       background-size: cover;
     }
     
@@ -60,7 +60,7 @@ body{
       top: 0;
       left: 0;
       right: 0;
-      color: wheat;
+      color: white;
     }
     .socials{
       position: absolute;
@@ -68,7 +68,7 @@ body{
       font-size: 20px;
   }
     .nav-link{
-      color: wheat;
+      color: white;
     }
     .nav-link .active{
       color: orange;

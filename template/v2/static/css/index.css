@@ -14,7 +14,7 @@ body{
     width: 100vw;
     overflow: hidden;
     animation: fadeUp 1s ease-in-out forwards;
-    color: wheat;
+    color: white;
   }
   
   /* Video Background */
@@ -57,7 +57,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    color: wheat;
+    color: white;
   }
   .socials{
     position: absolute;
@@ -65,7 +65,7 @@ body{
     font-size: 20px;
 }
   .nav-link{
-    color: wheat;
+    color: white;
   }
   .nav-link .active{
     color: orange;
@@ -81,7 +81,7 @@ body{
     z-index: 1;
     height: 450px;
     text-align: center;
-    color: wheat;
+    color: white;
     animation: fadeUp 1s ease-in-out forwards;
 }
 
@@ -99,7 +99,7 @@ body{
 
 
 .card-floating h3 {
-  color: wheat;
+  color: white;
   font-weight: 900;
 }
 .card-floating .card-text{
@@ -153,7 +153,7 @@ body{
   height: 100px;
   background-color: rgb(52, 152, 219);
   overflow: hidden;
-  color: wheat;
+  color: white;
   font-size: 65px;
   animation: glow 2s infinite;
 }
