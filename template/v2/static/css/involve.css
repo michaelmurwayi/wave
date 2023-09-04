@@ -78,11 +78,46 @@ body{
   }
   
   .team-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
+    display: flexbox;
+    /* grid-template-columns: repeat(1, 1fr); */
+    /* grid-template-rows: auto; */
+    gap: 100px;
     padding: 20px;
+  }
+  .team-container .item{
+    width: 400px; /* Set the desired width for the container */
+    height: 400px; /* Set the desired height for the container */
+    position: relative; /* Optional, for centering the image */
+    background-color: #fff;
+    border: none;
+  }
+  
+  .team-container img {
+    max-width: inherit; /* Make the image width fit the container's width */
+    max-height: 100%; /* Make the image height fit the container's height */
+    display: block; /* Remove any extra spacing or margin */
+    margin: 0 auto; /* Optional, for centering the image horizontally */
+    /* position: absolute; Optional, for centering the image vertically */
+    /* border-radius: 25px; */
+    top: 0; /* Optional, for centering the image vertically */
+    left: 0; /* Optional, for centering the image horizontally */
+    right: 0; /* Optional, for centering the image horizontally */
+    bottom: 0; /* Optional, for centering the image vertically */
+  }
+  .team-container .overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1; /* Initially hidden */
+    transition: opacity 0.3s ease; 
+    text-align: center;
   }
 
   .item {
@@ -95,6 +130,15 @@ body{
   @media (max-width: 768px) {
     .container {
       grid-template-columns: 1fr;
+    }
+    .team-container .item{
+      width: 100%; /* Set the desired width for the container */
+      height: 400px; /* Set the desired height for the container */
+      position: relative; /* Optional, for centering the image */
+    }
+    .bg-image{
+      position:relative;
+      left: 10vw;
     }
   }  
 
