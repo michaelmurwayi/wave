@@ -14,7 +14,7 @@ body{
     position: relative;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     animation: fadeUp 1s ease-in-out forwards;
     color: white;
 }
@@ -24,7 +24,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -266,8 +266,11 @@ body{
   }
   
   /* Media query for responsiveness */
-  @media (max-width: 468px) {
+  @media (max-width: 800px) {
     body{
+      width: 100vw;
+    }
+    .header{
       width: 100vw;
     }
     .header-content{
@@ -277,7 +280,7 @@ body{
       text-align: center;
     }
     .header-content h1{
-      font-size: 5vh;
+      font-size: 15vh;
     }
     .footer {
         flex-direction: column;
