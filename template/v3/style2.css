@@ -5,6 +5,10 @@
   background-size: cover;
   padding: 60px 0;
 }
+.service-icon img{
+  width: 100%;
+  border-radius: 50%;
+}
 .inner-container {
   width: 100%;
   max-width: 1200px;
