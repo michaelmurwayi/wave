@@ -6,6 +6,8 @@ body{
   max-width: 5%; /* Make sure the image doesn't exceed its container */
   height: auto; /* Maintain the aspect ratio of the image */
   margin: 0 auto; /* Center the image horizontally */
+  position: absolute;
+  top: 20px;
   }
 /* Header */
 .header {
@@ -15,7 +17,36 @@ body{
     overflow: hidden;
     animation: fadeUp 1s ease-in-out forwards;
     color: white;
+    text-align: center;
   }
+
+  .header ul{
+    list-style: none;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    /* text-align: center; */
+    color: white;
+  }
+
+  .header li{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+  }
+  .header a{
+    color: white;
+    font-size: 20px;
+  }
+
+  .active a{ 
+    color: orange;
+  }
+
+  li:hover a{
+    color: orange;
+  }
+
   
   /* Video Background */
   .video-bg video {
@@ -61,6 +92,7 @@ body{
   }
   .socials{
     position: absolute;
+    top: 20px;
     left: 30vw;
     font-size: 20px;
 }
@@ -76,7 +108,7 @@ body{
 
   .card-floating {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    top: -20vh;
+    top: -40vh;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
     height: 450px;
@@ -281,9 +313,38 @@ body{
   height: ;
 } */
 @media (max-width: 768px) {
+  .logo{
+    position: absolute;
+    left: 10px;
+    width: 150px;
+  }
+.socials{
+    position: absolute;
+    top: 10px;
+    left: 20vw;
+    font-size: 15px;
+}
+.header ul{
+  list-style: none;
+  position: absolute;
+  top: 50vh;
+  left: 30vw;
+  /* text-align: center; */
+  color: white;
+}
+
+.header li{
+  display: inline-block;
+  margin: 10px;
+  color: white;
+}
+.header a{
+  color: white;
+  font-size: 20px;
+}
   .header-content{
     position: absolute;
-    top: 25vh;
+    top: 45vh;
     left: 0vw;
     text-align: center;
   }
@@ -298,9 +359,35 @@ body{
   .gallery-item {
     max-width: calc(50% - 20px);
   }
+  .header ul{
+    list-style: none;
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    /* text-align: center; */
+    color: white;
+  }
+
+  .header li{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+  }
+  .header a{
+    color: white;
+    font-size: 20px;
+  }
+
+  .active a{ 
+    color: orange;
+  }
+
+  li:hover a{
+    color: orange;
+  }
   .card-floating {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    top: -20vh;
+    top: -30vh;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
     height: fit-content;

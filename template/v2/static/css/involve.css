@@ -204,8 +204,48 @@ body{
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
+  .header{
+    height: 100vh;
+  }
+  .header-content{
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    font-size: 5vw;
+    /* background-color: red; */
+  }
   .footer {
       flex-direction: column;
       align-items: center;
   }
+  .logo{
+    position: absolute;
+    left: 10px;
+    width: 150px;
+  }
+.socials{
+    position: absolute;
+    top: 10px;
+    left: 20vw;
+    font-size: 15px;
+}
+.header ul{
+  list-style: none;
+  position: absolute;
+  top: 50vh;
+  left: 30vw;
+  /* text-align: center; */
+  color: white;
+}
+
+.header li{
+  display: inline-block;
+  margin: 10px;
+  color: white;
+}
+.header a{
+  color: white;
+  font-size: 20px;
+}
+  
 }
